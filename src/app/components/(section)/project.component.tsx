@@ -1,0 +1,1 @@
+//en esta parte de projectos puedo crear unas tarjetas donde se muestre la imagen y una brebe descripcion del projecto ademas de un link donde lleve directamente al projecto en el github mirando que este completo seria bueno si le puedo poner iconos sobre lo que se uso en el projecto 

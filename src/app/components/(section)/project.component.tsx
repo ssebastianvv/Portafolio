@@ -4,16 +4,16 @@ import ProjectCard from "../card.project";
 const Projects = () => {
     const projects = [
       {
-        title: 'Proyecto 1',
+        title: 'poke api',
         imageUrl: 'https://example.com/image1.jpg',
         technologies: ['React', 'TypeScript', 'CSS'],
-        description: 'Una breve descripción del proyecto 1.',
+        description: 'mostramos las tarjetas de los pokemones .',
       },
       {
-        title: 'Proyecto 2',
+        title: 'lista',
         imageUrl: 'https://example.com/image2.jpg',
-        technologies: ['Node.js', 'Express', 'MongoDB'],
-        description: 'Una breve descripción del proyecto 2.',
+        technologies: ['React', 'typescript', 'CSS'],
+        description: 'se crea una lista de tareas .',
       },
       // Agrega más proyectos según sea necesario
     ];

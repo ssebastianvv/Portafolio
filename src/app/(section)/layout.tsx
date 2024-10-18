@@ -1,24 +1,22 @@
-import React, { ReactNode } from 'react';
-import Navbar from '../components/nadvar'; 
 
-interface LayoutProps {
-    children: ReactNode; 
+import React from 'react';
+import { HeaderComponent } from '../components/header'; // Ajusta la ruta según tu estructura
+import { Footer } from '../components/footer'; // Ajusta la ruta según tu estructura
+
+interface SectionsLayoutProps {
+  children: React.ReactNode; // Asegúrate de definir correctamente el tipo de children
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
-    return (
-        <div className='min-h-screen flex flex-col' >
-            <header className='bg-gray-900 text-white py-6 px-4'>
-               <div>
-               <h1 className='text-3xl font-bold'>Portfolio</h1>
-                </div>
-            
-            <Navbar />
-            </header>
-            <main>{children}</main>
-            
-        </div>
-    );
+const SectionsLayout: React.FC<SectionsLayoutProps> = ({ children }) => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <HeaderComponent />
+      <main className="flex-grow container mx-auto p-6">
+        {children} {/* Aquí se renderizan las páginas dentro de las secciones */}
+      </main>
+      <Footer />
+    </div>
+  );
 };
 
-export default Layout;
+export default SectionsLayout;

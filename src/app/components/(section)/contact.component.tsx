@@ -1,6 +1,7 @@
-// crear un formulario donde me llegue el mensaje a un correo 
-"use client"
+"use client";
 import React, { useState } from 'react';
+import styles from '../../styles/contact.module.css';
+
 
 const ContactForm: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -21,15 +22,14 @@ const ContactForm: React.FC = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         console.log('Datos del formulario:', formData);
-
-
+        // Aquí puedes agregar la lógica para enviar el formulario a tu correo
 
         setFormData({ name: '', email: '', company: '', reason: '' });
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
+        <form onSubmit={handleSubmit} className={styles.formContainer}>
+            <div className={styles.formGroup}>
                 <label htmlFor="name">Nombre:</label>
                 <input
                     type="text"
@@ -40,7 +40,7 @@ const ContactForm: React.FC = () => {
                     required
                 />
             </div>
-            <div>
+            <div className={styles.formGroup}>
                 <label htmlFor="email">Correo electrónico:</label>
                 <input
                     type="email"
@@ -51,7 +51,7 @@ const ContactForm: React.FC = () => {
                     required
                 />
             </div>
-            <div>
+            <div className={styles.formGroup}>
                 <label htmlFor="company">Empresa:</label>
                 <input
                     type="text"
@@ -62,7 +62,7 @@ const ContactForm: React.FC = () => {
                     required
                 />
             </div>
-            <div>
+            <div className={styles.formGroup}>
                 <label htmlFor="reason">Razón de contacto:</label>
                 <textarea
                     id="reason"

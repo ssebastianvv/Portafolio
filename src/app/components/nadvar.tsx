@@ -1,17 +1,21 @@
-import React from 'react';
+import React from "react";
+import { NavBarItemComponent } from "./navItemLink";
 
-const Navbar: React.FC = () => {
-    return (
-        <nav className="navbar">
-            <div className="logo">Juan sebastian valenzuela</div>
-            <ul className="Flex space-x-6">
-                <li> <link rel="stylesheet" href="/" /></li>
-                <li><a href="/about">Acerca de</a></li>
-                <li><a href="/contact">Contacto</a></li>
-                <li><a href="/projects">Proyectos</a></li>
-            </ul>
-        </nav>
-    );
+const navBarItems = [
+  { path: "/about", title: " Acerca de Mí" },
+  { path: "/projects", title: "Proyectos" },
+  { path: "/contact", title: "Contacto" },
+];
+
+export const NavBar:React.FC = () => {
+  return (
+    <nav>
+      <div className="flex space-x-6">
+        {navBarItems.map((item, key) => (
+          <NavBarItemComponent path={item.path} title={item.title} key={key} />
+        ))}
+      </div>
+    </nav>
+  );
 };
 
-export default Navbar;

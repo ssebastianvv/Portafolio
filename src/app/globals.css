@@ -2,3 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+.icon {
+    font-size: 20px; /* Cambia este valor según sea necesario */
+  }
+  label {
+    display: block; /* Hacer que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio inferior para las etiquetas */
+    font-weight: bold; /* Negrita para las etiquetas */
+  }
+  
+  input, textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+  }
+  input:focus, textarea:focus {
+    border-color: #007bff; /* Color de borde al hacer foco */
+    outline: none; /* Quitar el contorno predeterminado */
+  }
+  
+  button {
+    padding: 10px 15px; /* Espacio interno del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Color al pasar el ratón por encima */
+  }
+  

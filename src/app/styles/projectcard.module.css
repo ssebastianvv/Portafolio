@@ -1,0 +1,45 @@
+.project-card {
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden; /* Para asegurarte de que la imagen no se desborde */
+    margin: 20px; /* Espacio alrededor de la tarjeta */
+    transition: transform 0.2s; /* Animación de hover */
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Aumentar ligeramente al pasar el ratón */
+  }
+  
+  .project-image {
+    width: 100%; /* Imagen ocupa el 100% del ancho de la tarjeta */
+    height: auto; /* Mantener la relación de aspecto */
+  }
+  
+  .project-title {
+    font-size: 1.5rem; /* Tamaño del título */
+    margin: 10px 0; /* Espacio arriba y abajo */
+    color: #333; /* Color del texto */
+  }
+  
+  .project-description {
+    font-size: 1rem; /* Tamaño de la descripción */
+    color: #666; /* Color del texto más claro */
+    margin-bottom: 10px; /* Espacio inferior */
+  }
+  
+  .project-technologies {
+    display: flex; /* Usar flexbox para alinear las tecnologías */
+    flex-wrap: wrap; /* Permitir que se envuelvan */
+    gap: 8px; /* Espacio entre las etiquetas */
+  }
+  
+  .technology-badge {
+    background-color: #f0f0f0; /* Color de fondo para las etiquetas */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+    font-size: 0.9rem; /* Tamaño de fuente */
+    color: #555; /* Color del texto */
+    white-space: nowrap; /* Evitar que el texto se divida */
+  }
+  

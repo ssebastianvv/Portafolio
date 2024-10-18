@@ -1,0 +1,34 @@
+.container {
+    padding: 20px;
+    max-width: 800px; /* Limitar el ancho */
+    margin: 0 auto; /* Centrar el contenido */
+  }
+  
+  .header {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px; /* Espacio inferior */
+  }
+  
+  .card {
+    background-color: #f9f9f9; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    width: 30%; /* Ancho de las tarjetas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s; /* Animación al pasar el ratón */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Aumentar ligeramente al pasar el ratón */
+  }
+  
+  .gustos {
+    margin-top: 40px; /* Espacio superior */
+  }

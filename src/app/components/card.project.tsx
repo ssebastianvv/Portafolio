@@ -1,5 +1,7 @@
 import React from 'react';
-import styles from '../styles/projectcard.module.css'; // Asegúrate de que la ruta sea correcta
+import styles from '../styles/projectcard.module.css'; 
+
+
 
 interface ProjectCardProps {
   title: string;

@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import Card from '../card';
-import styles from '../../styles/aboutform.module.css'; // Asegúrate de que la ruta sea correcta
+import styles from '../../styles/aboutForm.module.css'; 
 
 const AboutForm: React.FC = () => {
   return (

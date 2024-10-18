@@ -29,7 +29,7 @@ const Projects = () => {
     {
       title: 'Lista de Tareas',
       imageUrl: 'https://example.com/image2.jpg',
-      technologies: ['React', 'Bootstrap', 'CSS'],
+      technologies: ['React', 'Bootstrap', 'FaGithub'],
       description: 'Se crea una lista de tareas.',
     },
   ];
@@ -40,6 +40,7 @@ const Projects = () => {
     { name: 'CSS', icon: <IoLogoCss3 /> },
     { name: 'HTML5', icon: <FaHtml5 /> },
     { name: 'Bootstrap', icon: <FaBootstrap /> },
+    { name: 'FaGithub', icon: <FaGithub /> },
     // Agrega más tecnologías según sea necesario
   ];
 

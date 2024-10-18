@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import  {NavBar} from './nadvar'
+import  {NavBar} from './navbar'
 
 export const HeaderComponent = () => {
   return (
